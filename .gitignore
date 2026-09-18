@@ -21,9 +21,25 @@ Thumbs.db
 .idea/
 .vscode/
 
+# Local assistant/editor instruction and workspace metadata
+AGENTS.md
+.agents/
+.codex/
+.claude/
+.cursor/
+.windsurf/
+.aider*
+.copilot/
+
 # Downloaded source files and intermediate build artifacts
 data/raw/
 data/interim/
 
 # Generated final datasets belong on Kaggle or another approved data host
 data/final/*.parquet
+data/final/*.csv
+
+# Generated QA detail files stay local; the checked-in report is the summary
+reports/*.csv
+reports/qa_summary.json
+reports/.rebuild_pending

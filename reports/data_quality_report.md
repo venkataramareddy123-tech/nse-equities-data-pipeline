@@ -1,9 +1,9 @@
 # Data Quality Report
-_Generated 2026-09-18 21:09_
+_Generated 2026-09-18 22:07_
 
 ## NSE
-- securities (ISINs): **3,872**, symbols: 3,777, duplicate rows: 0
-- calendar: 2015-01-01 -> 2026-09-11, 2888 sessions, max gap 5 days, gaps>4d: 5
+- securities (ISINs): **3,885**, symbols: 3,790, duplicate rows: 0
+- calendar: 2015-01-01 -> 2026-09-18, 2892 sessions, max gap 5 days, gaps>4d: 5
 - prev_close mismatches >1%: 10,170
 
 | check | value |
@@ -17,7 +17,7 @@ _Generated 2026-09-18 21:09_
 | open<low | 0 |
 | volume<0 | 0 |
 | volume==0 rows | 0 |
-| deliv_pct coverage | 0.9978650877761096 |
+| deliv_pct coverage | 0.9978697032761651 |
 | deliv_pct outside [0,100] | 0 |
 | deliv_qty > volume | 8 |
 
@@ -34,7 +34,7 @@ _Generated 2026-09-18 21:09_
 | 2023 | 245 | 2,161 | 445,186 | 16,153,146 |
 | 2024 | 246 | 2,338 | 461,929 | 28,506,795 |
 | 2025 | 248 | 2,555 | 529,758 | 24,361,299 |
-| 2026 | 172 | 2,931 | 421,347 | 21,271,793 |
+| 2026 | 176 | 2,944 | 431,945 | 21,735,635 |
 
 ## Corporate action reconciliation
 - capital actions reconciled: 677
