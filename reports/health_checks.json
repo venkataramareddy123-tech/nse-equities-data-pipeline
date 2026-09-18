@@ -1,0 +1,338 @@
+{
+ "NSE": {
+  "ohlc": {
+   "close<=0": 0,
+   "close NaN": 0,
+   "high<low": 0,
+   "close>high": 0,
+   "close<low": 0,
+   "open>high": 0,
+   "open<low": 0,
+   "volume<0": 0,
+   "volume==0 rows": 0
+  },
+  "delivery": {
+   "deliv_pct coverage": 0.9978650877761096,
+   "deliv_pct outside [0,100]": 0,
+   "deliv_qty > volume": 8
+  },
+  "calendar": {
+   "first": "2015-01-01",
+   "last": "2026-09-11",
+   "n_sessions": 2888,
+   "max_gap_days": 5,
+   "gaps_over_4_days": 5
+  },
+  "prev_close_mismatch_gt_1pct": 10170,
+  "prev_close_pairs_checked": 4880671,
+  "yearly": [
+   {
+    "year": 2015,
+    "sessions": 247,
+    "securities": 1628,
+    "unique_isins": 1628,
+    "rows": 355279,
+    "turnover_cr": 4312650.27004708
+   },
+   {
+    "year": 2016,
+    "sessions": 246,
+    "securities": 1659,
+    "unique_isins": 1659,
+    "rows": 369146,
+    "turnover_cr": 4654631.30501579
+   },
+   {
+    "year": 2017,
+    "sessions": 248,
+    "securities": 1705,
+    "unique_isins": 1705,
+    "rows": 368537,
+    "turnover_cr": 6562174.115162109
+   },
+   {
+    "year": 2018,
+    "sessions": 246,
+    "securities": 1682,
+    "unique_isins": 1682,
+    "rows": 367880,
+    "turnover_cr": 7964233.762298545
+   },
+   {
+    "year": 2019,
+    "sessions": 244,
+    "securities": 1697,
+    "unique_isins": 1697,
+    "rows": 367105,
+    "turnover_cr": 8353833.339958712
+   },
+   {
+    "year": 2020,
+    "sessions": 250,
+    "securities": 1740,
+    "unique_isins": 1740,
+    "rows": 376705,
+    "turnover_cr": 13416592.048362197
+   },
+   {
+    "year": 2021,
+    "sessions": 248,
+    "securities": 1918,
+    "unique_isins": 1918,
+    "rows": 389770,
+    "turnover_cr": 17038180.559624758
+   },
+   {
+    "year": 2022,
+    "sessions": 248,
+    "securities": 2060,
+    "unique_isins": 2060,
+    "rows": 438894,
+    "turnover_cr": 13921607.014124377
+   },
+   {
+    "year": 2023,
+    "sessions": 245,
+    "securities": 2161,
+    "unique_isins": 2161,
+    "rows": 445186,
+    "turnover_cr": 16153146.065640224
+   },
+   {
+    "year": 2024,
+    "sessions": 246,
+    "securities": 2338,
+    "unique_isins": 2338,
+    "rows": 461929,
+    "turnover_cr": 28506794.92694845
+   },
+   {
+    "year": 2025,
+    "sessions": 248,
+    "securities": 2555,
+    "unique_isins": 2555,
+    "rows": 529758,
+    "turnover_cr": 24361299.32201327
+   },
+   {
+    "year": 2026,
+    "sessions": 172,
+    "securities": 2931,
+    "unique_isins": 2931,
+    "rows": 421347,
+    "turnover_cr": 21271793.455244955
+   }
+  ],
+  "dupes": 0,
+  "securities_total": 3872,
+  "symbols_total": 3777
+ },
+ "corp_actions": {
+  "capital actions reconciled": 677,
+  "within 12% tolerance": 599,
+  "gap-estimated factors": 12,
+  "reorg-flagged": 387,
+  "fail_examples": [
+   {
+    "isin": "INE00KV01014",
+    "ex_date": "2021-09-02 00:00:00",
+    "purpose": " Bonus 1:2",
+    "cap_c": 1.5,
+    "expected_ratio": 0.6666666666666666,
+    "observed_ratio": 0.9962055881338394
+   },
+   {
+    "isin": "INE01II01013",
+    "ex_date": "2024-02-22 00:00:00",
+    "purpose": "Rights 1:1 @ Premium Rs 15/-",
+    "cap_c": 1.1631799163179917,
+    "expected_ratio": 0.8597122302158273,
+    "observed_ratio": 1.1050359712230216
+   },
+   {
+    "isin": "INE01IU01018",
+    "ex_date": "2024-12-16 00:00:00",
+    "purpose": "Bonus 9:1",
+    "cap_c": 10.0,
+    "expected_ratio": 0.1,
+    "observed_ratio": 0.2900985154583012
+   },
+   {
+    "isin": "INE01JE01010",
+    "ex_date": "2021-02-18 00:00:00",
+    "purpose": " Face Value Split (Sub-Division) - From Rs 10 Per Share To Rs 2 Per Share",
+    "cap_c": 5.0,
+    "expected_ratio": 0.2,
+    "observed_ratio": 0.22413793103448273
+   },
+   {
+    "isin": "INE02AR01019",
+    "ex_date": "2023-07-18 00:00:00",
+    "purpose": "Bonus 4:1",
+    "cap_c": 5.0,
+    "expected_ratio": 0.2,
+    "observed_ratio": 0.24000908265213444
+   },
+   {
+    "isin": "INE034D01031",
+    "ex_date": "2021-12-23 00:00:00",
+    "purpose": " Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share",
+    "cap_c": 2.0,
+    "expected_ratio": 0.5,
+    "observed_ratio": 0.6
+   },
+   {
+    "isin": "INE064C01014",
+    "ex_date": "2019-12-13 00:00:00",
+    "purpose": " Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 1/- Per Share",
+    "cap_c": 10.0,
+    "expected_ratio": 0.1,
+    "observed_ratio": 0.11227544910179642
+   },
+   {
+    "isin": "INE07O001018",
+    "ex_date": "2022-11-21 00:00:00",
+    "purpose": "Face Value Split (Sub-Division) - From Rs 2/- Per Share To Re 1/- Per Share || Bonus 3:1",
+    "cap_c": 8.0,
+    "expected_ratio": 0.125,
+    "observed_ratio": 0.15001963607802069
+   },
+   {
+    "isin": "INE07OG01012",
+    "ex_date": "2023-07-24 00:00:00",
+    "purpose": "Bonus 1:1",
+    "cap_c": 2.0,
+    "expected_ratio": 0.5,
+    "observed_ratio": 0.9562079510703364
+   },
+   {
+    "isin": "INE0B1K01014",
+    "ex_date": "2024-08-09 00:00:00",
+    "purpose": "Bonus 2:1",
+    "cap_c": 3.0,
+    "expected_ratio": 0.3333333333333333,
+    "observed_ratio": 0.43302752293577984
+   },
+   {
+    "isin": "INE105A01035",
+    "ex_date": "2023-03-24 00:00:00",
+    "purpose": "Bonus Ncrps 1:116",
+    "cap_c": 1.0086206896551724,
+    "expected_ratio": 0.9914529914529915,
+    "observed_ratio": 0.8000083044407997
+   },
+   {
+    "isin": "INE105A01035",
+    "ex_date": "2026-09-08 00:00:00",
+    "purpose": "Scheme Of Arrangement - Bonus Ncrps 46:1",
+    "cap_c": 47.0,
+    "expected_ratio": 0.02127659574468085,
+    "observed_ratio": 0.9730142566191446
+   },
+   {
+    "isin": "INE110B01017",
+    "ex_date": "2024-09-20 00:00:00",
+    "purpose": "Bonus 1:4",
+    "cap_c": 1.25,
+    "expected_ratio": 0.8,
+    "observed_ratio": 0.6144671027318199
+   },
+   {
+    "isin": "INE137I01015",
+    "ex_date": "2024-08-12 00:00:00",
+    "purpose": "Bonus 3:1",
+    "cap_c": 4.0,
+    "expected_ratio": 0.25,
+    "observed_ratio": 0.20552508361204014
+   },
+   {
+    "isin": "INE142K01011",
+    "ex_date": "2017-07-12 00:00:00",
+    "purpose": " Bonus 2:5",
+    "cap_c": 1.4,
+    "expected_ratio": 0.7142857142857143,
+    "observed_ratio": 0.8571428571428571
+   },
+   {
+    "isin": "INE170V01019",
+    "ex_date": "2022-06-27 00:00:00",
+    "purpose": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 1/- Per Share",
+    "cap_c": 10.0,
+    "expected_ratio": 0.1,
+    "observed_ratio": 0.11609348280448414
+   },
+   {
+    "isin": "INE182D01012",
+    "ex_date": "2018-04-05 00:00:00",
+    "purpose": " Face Value Split (Sub-Division) - From Rs 10/- Per Share To Rs 5/- Per Share",
+    "cap_c": 2.0,
+    "expected_ratio": 0.5,
+    "observed_ratio": 0.5632183908045977
+   },
+   {
+    "isin": "INE195Y01010",
+    "ex_date": "2023-01-04 00:00:00",
+    "purpose": "Bonus 3:1",
+    "cap_c": 4.0,
+    "expected_ratio": 0.25,
+    "observed_ratio": 0.28718582612278537
+   },
+   {
+    "isin": "INE201J01017",
+    "ex_date": "2019-01-03 00:00:00",
+    "purpose": " Rights 588:1000@ Premium Rs 2/-",
+    "cap_c": 1.287245007515568,
+    "expected_ratio": 0.7768528867165997,
+    "observed_ratio": 0.41059602649006627
+   },
+   {
+    "isin": "INE215I01019",
+    "ex_date": "2021-08-02 00:00:00",
+    "purpose": " Bonus 1: 1",
+    "cap_c": 2.0,
+    "expected_ratio": 0.5,
+    "observed_ratio": 0.33437149620032386
+   },
+   {
+    "isin": "INE216D01018",
+    "ex_date": "2015-03-30 00:00:00",
+    "purpose": "Face Value Split (Sub-Division) - From Rs 10/- Per Share To Re 1/- Per Share",
+    "cap_c": 10.0,
+    "expected_ratio": 0.1,
+    "observed_ratio": 0.11764705882352942
+   },
+   {
+    "isin": "INE219H01039",
+    "ex_date": "2015-06-25 00:00:00",
+    "purpose": "Bonus 1:1",
+    "cap_c": 2.0,
+    "expected_ratio": 0.5,
+    "observed_ratio": 0.5633802816901408
+   },
+   {
+    "isin": "INE224E01028",
+    "ex_date": "2017-01-10 00:00:00",
+    "purpose": " Bonus 1:4",
+    "cap_c": 1.25,
+    "expected_ratio": 0.8,
+    "observed_ratio": 0.9490909090909091
+   },
+   {
+    "isin": "INE224E01028",
+    "ex_date": "2025-04-28 00:00:00",
+    "purpose": "Rights 51:82 @ Premium Rs 0/-",
+    "cap_c": 0.8866666666666667,
+    "expected_ratio": 1.1278195488721805,
+    "observed_ratio": 0.9466666666666667
+   },
+   {
+    "isin": "INE224E01036",
+    "ex_date": "2024-07-16 00:00:00",
+    "purpose": "Rights 1:1 @ Premium Rs 0/-",
+    "cap_c": 1.6721311475409837,
+    "expected_ratio": 0.5980392156862745,
+    "observed_ratio": 0.1607843137254902
+   }
+  ]
+ }
+}

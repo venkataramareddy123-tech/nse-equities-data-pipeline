@@ -1,0 +1,54 @@
+{
+ "ts": "20260918_210945",
+ "status": "attention",
+ "checks": {
+  "nse_final_exists": {
+   "ok": true,
+   "detail": "312MB"
+  },
+  "nse_ohlc_clean": {
+   "ok": true,
+   "detail": "violations=0"
+  },
+  "delivery_bounds": {
+   "ok": true,
+   "detail": "outside=0"
+  },
+  "delivery_coverage": {
+   "ok": true,
+   "detail": "coverage=0.9979"
+  },
+  "calendar_sane": {
+   "ok": true,
+   "detail": "max_gap=5d last=2026-09-11"
+  },
+  "prev_close_rate": {
+   "ok": true,
+   "detail": "10170/4880671 (0.21%)"
+  },
+  "parse_fails": {
+   "ok": true,
+   "detail": "current-year=none older=none"
+  },
+  "nse_key_dupes": {
+   "ok": true,
+   "detail": "(isin,date,series) dupes=0"
+  },
+  "recon_capital": {
+   "ok": true,
+   "detail": "88.5% of 677 capital actions"
+  },
+  "freshness": {
+   "ok": false,
+   "detail": "last=2026-09-11 (7d ago)"
+  },
+  "unexpected_miss": {
+   "ok": false,
+   "detail": "holiday_like=54 lag=none paging=['2026-09-14'] info=['2018-08-22', '2022-10-26', '2024-07-17', '2024-08-15', '2024-10-02', '2024-11-15', '2024-11-20', '2024-12-25', '2025-10-22', '2025-11-05', '2025-12-25', '2026-01-15', '2026-01-26', '2026-03-03', '2026-03-26', '2026-03-31', '2026-04-03', '2026-04-14', '2026-05-01', '2026-05-28', '2026-06-26', '2026-09-14']"
+  }
+ },
+ "actions_taken": [
+  "check-only"
+ ],
+ "log": "roll_update_20260918_210945.log"
+}

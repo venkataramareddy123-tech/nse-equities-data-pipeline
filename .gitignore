@@ -1,0 +1,29 @@
+# Python bytecode and local environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+env/
+venv/
+
+# Logs and temporary run files
+logs/
+*.log
+*.tmp*
+.lock
+
+# Operating system and IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Downloaded source files and intermediate build artifacts
+data/raw/
+data/interim/
+
+# Generated final datasets belong on Kaggle or another approved data host
+data/final/*.parquet
