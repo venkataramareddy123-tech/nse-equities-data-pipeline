@@ -1,6 +1,6 @@
 {
- "ts": "20260918_221317",
- "status": "attention",
+ "ts": "20260918_222103",
+ "status": "ok",
  "checks": {
   "nse_final_exists": {
    "ok": true,
@@ -43,12 +43,10 @@
    "detail": "last=2026-09-18 (0d ago)"
   },
   "unexpected_miss": {
-   "ok": false,
-   "detail": "holiday_like=67 lag=none paging=['2026-09-14'] info=['2021-05-13', '2024-07-17', '2024-08-15', '2024-10-02', '2024-11-15', '2024-11-20', '2024-12-25', '2025-10-22', '2025-11-05', '2025-12-25', '2026-01-15', '2026-01-26', '2026-03-03', '2026-03-26', '2026-03-31', '2026-04-03', '2026-04-14', '2026-05-01', '2026-05-28', '2026-06-26', '2026-09-14']"
+   "ok": true,
+   "detail": "holiday_like=30 lag=none paging=none info=['2019-04-29', '2021-05-13']"
   }
  },
- "actions_taken": [
-  "no-op fast path: raw unchanged, rebuild skipped"
- ],
- "log": "roll_update_20260918_221317.log"
+ "actions_taken": [],
+ "log": "roll_update_20260918_222103.log"
 }

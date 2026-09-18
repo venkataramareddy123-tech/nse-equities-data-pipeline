@@ -84,6 +84,20 @@ def test_digest_unexpected_price_only(tmp_path, monkeypatch):
     assert dg["unexpected_price_only"] == ["2026-01-05"]
 
 
+def test_digest_known_nse_holiday(tmp_path, monkeypatch):
+    rows = [
+        ("u", "C:\\d\\cm\\2026\\cm14SEP2026bhav.csv.zip", "miss", 0),
+        ("u", "C:\\d\\mto\\2026\\MTO_14092026.DAT", "fail", 0),
+    ]
+    raw = tmp_path / "raw"
+    raw.mkdir()
+    _manifest(raw, rows).rename(raw / "manifest_nse.csv")
+    monkeypatch.setattr(roll_update, "BASE", str(tmp_path))
+    dg = roll_update.download_digest()
+    assert dg["holiday_like"] == 1
+    assert dg["unexpected_price_only"] == []
+
+
 # --- lock ---------------------------------------------------------------------
 
 def test_lock_acquire_release_and_stale(tmp_path, monkeypatch):

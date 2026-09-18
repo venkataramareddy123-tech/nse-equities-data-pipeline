@@ -1,5 +1,5 @@
 # Data Quality Report
-_Generated 2026-09-18 22:07_
+_Generated 2026-09-18 22:25_
 
 ## NSE
 - securities (ISINs): **3,885**, symbols: 3,790, duplicate rows: 0

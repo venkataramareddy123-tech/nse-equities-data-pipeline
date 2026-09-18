@@ -248,6 +248,10 @@ def download_digest() -> dict:
     MON = {'JAN': '01', 'FEB': '02', 'MAR': '03', 'APR': '04', 'MAY': '05',
            'JUN': '06', 'JUL': '07', 'AUG': '08', 'SEP': '09', 'OCT': '10',
            'NOV': '11', 'DEC': '12'}
+    # NSE's 2026 equity calendar lists Ganesh Chaturthi on 2026-09-14.
+    # Keep this explicit because the archive exposes a stale prior-session
+    # full file for that date while the MTO endpoint fails.
+    known_holidays = {'2026-09-14'}
 
     def fdate(path):
         b = path.replace('\\', '/').split('/')[-1]
@@ -276,8 +280,11 @@ def download_digest() -> dict:
             price_miss.add(d)
         else:
             deliv_miss.add(d)
-    info['holiday_like'] = len(price_miss & deliv_miss)
-    info['unexpected_price_only'] = sorted(price_miss - deliv_miss)
+    info['holiday_like'] = len((price_miss & deliv_miss)
+                               | (price_miss & known_holidays))
+    info['unexpected_price_only'] = sorted(
+        price_miss - deliv_miss - known_holidays
+    )
     today = dt.date.today()
     for d in sorted(deliv_miss - price_miss):
         try:
